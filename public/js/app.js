@@ -2153,7 +2153,7 @@ Vue.component('map-component', __webpack_require__(/*! ./components/MapComponent
 Vue.config.productionTip = false;
 Vue.use(vue2_google_maps__WEBPACK_IMPORTED_MODULE_0__, {
   load: {
-    key: "AIzaSyAW8KBH0LjuEPY6mlxPOQWfPdnUvzqcydQ//ssss",
+    key: "A",
     libraries: "places"
   }
 });
