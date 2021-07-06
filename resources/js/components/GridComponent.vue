@@ -5,7 +5,9 @@
             <a href="/"><u>Go Back</u></a>
             </div> 
             <div style="width:50%; float:left;">
-             <h1>Sorted By Coloum: {{sortByColumn}}</h1>
+             <h2>Sorted By Coloum: {{sortByColumn.toUpperCase() }} </h2>
+             <h2 v-if="ascending">Sorted Order: ASC </h2>
+             <h2 v-if="!ascending">Sorted Order: DESC </h2>
             </div>
             <div style="width:25%; float:left; padding-top:25px;">
             <button class="next" v-show="!isPaginated" @click="showPaginatedresult">Apply Pagination</button>  
@@ -86,7 +88,7 @@
                     console.log("ressss", response.data)
                     this.results = response.data.data;
                     this.headers = response.data.columns;
-                    this.total = response.data.total;
+                    this.total = response.data.count;
                 });
             },
             sortTable: function(col){
@@ -132,10 +134,7 @@
   color: #000000;
   margin-top: 50px;
 }
-h1{
-  font-size: 30px;
-  color: #fff;
-  text-transform: uppercase;
+h2{
   font-weight: 300;
   text-align: center;
   margin-bottom: 15px;

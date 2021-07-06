@@ -1995,6 +1995,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: 'Grid',
   mounted: function mounted() {
@@ -2032,7 +2034,7 @@ __webpack_require__.r(__webpack_exports__);
         console.log("ressss", response.data);
         _this.results = response.data.data;
         _this.headers = response.data.columns;
-        _this.total = response.data.total;
+        _this.total = response.data.count;
       });
     },
     sortTable: function sortTable(col) {
@@ -2153,7 +2155,7 @@ Vue.component('map-component', __webpack_require__(/*! ./components/MapComponent
 Vue.config.productionTip = false;
 Vue.use(vue2_google_maps__WEBPACK_IMPORTED_MODULE_0__, {
   load: {
-    key: "A",
+    key: "AIzaSyBXupgdtJLNIN7fWbz-gGZxcNcwjcAgPtU",
     libraries: "places"
   }
 });
@@ -6720,7 +6722,7 @@ __webpack_require__.r(__webpack_exports__);
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 ___CSS_LOADER_EXPORT___.push([module.id, "@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);"]);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n#app {\n  font-family: Avenir, Helvetica, Arial, sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  text-align: center;\n  color: #000000;\n  margin-top: 50px;\n}\nh1{\n  font-size: 30px;\n  color: #fff;\n  text-transform: uppercase;\n  font-weight: 300;\n  text-align: center;\n  margin-bottom: 15px;\n}\ntable{\n  width:100%;\n  table-layout: fixed;\n}\n.tbl-header{\n  background-color: rgba(255,255,255,0.3);\n}\n.tbl-content{\n  height:500px;\n  overflow-x:auto;\n  margin-top: 0px;\n  border: 1px solid rgba(255,255,255,0.3);\n}\nth{\n  padding: 20px 15px;\n  text-align: left;\n  font-weight: 500;\n  font-size: 12px;\n  color: #fff;\n  text-transform: uppercase;\n}\ntd{\n  padding: 15px;\n  text-align: left;\n  vertical-align:middle;\n  font-weight: 300;\n  font-size: 12px;\n  color: #fff;\n  border-bottom: solid 1px rgba(255,255,255,0.1);\n}\nbody{\n  background: linear-gradient(to right, #25c481, #25b7c4);\n  font-family: 'Roboto', sans-serif;\n}\nsection{\n  margin: 50px;\n}\n.previous {\n  background-color: #f1f1f1;\n  color: black;\n}\n.next {\n  background-color: #04AA6D;\n  color: white;\n}\nbutton {\n  text-decoration: none;\n  display: inline-block;\n  padding: 8px 16px;\n  font-size: 16px;\n}\n.footer {\n  text-align: center;\n  width: 100%;\n  padding: 20px;\n}\nbutton:hover {\n  background-color: #ddd;\n  color: black;\n  cursor: pointer;\n}\nbutton:disabled,\nbutton[disabled]{\n  border: 1px solid #999999;\n  background-color: #cccccc;\n  color: #666666;\n}\n.nav{\n    width:100%;\n    display: inline-block;\n    /* background-color: #1a212c; */\n}\na{\n    padding: 20px;\n}\n.sort{\n    position: absolute;\n    color: crimson;\n    padding-left: 150px;\n}\n.main{\n    padding-left: 20px;\n    padding-right: 20px;\n}\n.center {\n  padding-left: 25px;\n  padding-right: 25px;\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n#app {\n  font-family: Avenir, Helvetica, Arial, sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  text-align: center;\n  color: #000000;\n  margin-top: 50px;\n}\nh2{\n  font-weight: 300;\n  text-align: center;\n  margin-bottom: 15px;\n}\ntable{\n  width:100%;\n  table-layout: fixed;\n}\n.tbl-header{\n  background-color: rgba(255,255,255,0.3);\n}\n.tbl-content{\n  height:500px;\n  overflow-x:auto;\n  margin-top: 0px;\n  border: 1px solid rgba(255,255,255,0.3);\n}\nth{\n  padding: 20px 15px;\n  text-align: left;\n  font-weight: 500;\n  font-size: 12px;\n  color: #fff;\n  text-transform: uppercase;\n}\ntd{\n  padding: 15px;\n  text-align: left;\n  vertical-align:middle;\n  font-weight: 300;\n  font-size: 12px;\n  color: #fff;\n  border-bottom: solid 1px rgba(255,255,255,0.1);\n}\nbody{\n  background: linear-gradient(to right, #25c481, #25b7c4);\n  font-family: 'Roboto', sans-serif;\n}\nsection{\n  margin: 50px;\n}\n.previous {\n  background-color: #f1f1f1;\n  color: black;\n}\n.next {\n  background-color: #04AA6D;\n  color: white;\n}\nbutton {\n  text-decoration: none;\n  display: inline-block;\n  padding: 8px 16px;\n  font-size: 16px;\n}\n.footer {\n  text-align: center;\n  width: 100%;\n  padding: 20px;\n}\nbutton:hover {\n  background-color: #ddd;\n  color: black;\n  cursor: pointer;\n}\nbutton:disabled,\nbutton[disabled]{\n  border: 1px solid #999999;\n  background-color: #cccccc;\n  color: #666666;\n}\n.nav{\n    width:100%;\n    display: inline-block;\n    /* background-color: #1a212c; */\n}\na{\n    padding: 20px;\n}\n.sort{\n    position: absolute;\n    color: crimson;\n    padding-left: 150px;\n}\n.main{\n    padding-left: 20px;\n    padding-right: 20px;\n}\n.center {\n  padding-left: 25px;\n  padding-right: 25px;\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -39263,9 +39265,21 @@ var render = function() {
             _vm._m(0),
             _vm._v(" "),
             _c("div", { staticStyle: { width: "50%", float: "left" } }, [
-              _c("h1", [
-                _vm._v("Sorted By Coloum: " + _vm._s(_vm.sortByColumn))
-              ])
+              _c("h2", [
+                _vm._v(
+                  "Sorted By Coloum: " +
+                    _vm._s(_vm.sortByColumn.toUpperCase()) +
+                    " "
+                )
+              ]),
+              _vm._v(" "),
+              _vm.ascending
+                ? _c("h2", [_vm._v("Sorted Order: ASC ")])
+                : _vm._e(),
+              _vm._v(" "),
+              !_vm.ascending
+                ? _c("h2", [_vm._v("Sorted Order: DESC ")])
+                : _vm._e()
             ]),
             _vm._v(" "),
             _c(

@@ -46,14 +46,14 @@ class StationController extends BaseController
             $data[] = $row;
 
         }
-
-        $stations = array_slice($data, $offset, $limit);
         
         //sorting
         if($sortByColumn == 'name' || $sortByColumn == 'Code'){
 
-            $this->sortResults($stations, $sortByColumn, $ascending);
+            $this->sortResults($data, $sortByColumn, $ascending);
         }
+
+        $stations = array_slice($data, $offset, $limit);
 
         $results = [];
         $results['count'] = count($data);
