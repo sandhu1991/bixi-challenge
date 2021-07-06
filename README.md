@@ -4,7 +4,7 @@
 
 The Bixi app has two section:
   - The Grid view to show all the stations with sorting and pagination ability.
-  - The Map where all stations are marked on **Google Maps** with their respective lat and lng cordinates.
+  - The Map where all stations are marked on **Google Maps** with their respective lat and lng cordinates.**(Google Api Key is required)**
 
 ## Stack Used:
 
@@ -21,4 +21,6 @@ The Bixi app has two section:
 * Tune to url for app: ``` http://localhost:8000 ```(if 8000 is in use, it will use 8001 and so on....)
 * To reflect front end changes on dev : ```npm run watch `
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+## Note:
+<p>For the **google Map** mark all the locations on map, Please use the google api Key.</p>
+<p>Place the key in .env file next to GOOGLE_API_KEY.</p>
