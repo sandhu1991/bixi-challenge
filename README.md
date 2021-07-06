@@ -13,7 +13,7 @@ The Bixi app has two components:
 
 ## For development:
 * Clone this repo: ``` git clone git@github.com:sandhu1991/bixi-challenge.git ```
-* Cd to the directory : ``` cd /bixi-challenge ```
+* Cd to the directory : ``` cd bixi-challenge/ ```
 * Run Composer install: ``` Composer install```
 * Run npm install: ``` npm install```
 * To install package dependecies: ``` npm run dev```
