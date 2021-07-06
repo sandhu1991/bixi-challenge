@@ -2,7 +2,7 @@
 
 ## About App
 
-The Bixi app has two section:
+The Bixi app has two components:
   - The Grid view to show all the stations with sorting and pagination ability.
   - The Map where all stations are marked on **Google Maps** with their respective lat and lng cordinates.**(Google Api Key is required)**
 
