@@ -22,5 +22,5 @@ The Bixi app has two section:
 * To reflect front end changes on dev : ```npm run watch `
 
 ## Note:
-<p>For the **google Map** mark all the locations on map, Please use the google api Key.</p>
+<p>For the google Map to mark all the locations on map, it needs google api Key and also the enable the Javascrip api and places api enable on google cloud platform.</p>
 <p>Place the key in .env file next to GOOGLE_API_KEY.</p>
