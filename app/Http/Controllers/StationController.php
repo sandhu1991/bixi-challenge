@@ -96,8 +96,13 @@ class StationController extends BaseController
         usort($data, function ($a, $b) use ($sortByColumn, $ascending) {
 
             if($sortByColumn == 'name'){
-                $cmp = strcmp($a[$sortByColumn], $b[$sortByColumn]);
-                return $ascending == 'true' ? $cmp : -$cmp;
+                if($ascending == 'true'){
+                    return  strcasecmp($a[$sortByColumn], $b[$sortByColumn]);
+                }else{
+                    return  strcasecmp($b[$sortByColumn], $a[$sortByColumn]);
+                }
+                
+                
             }
 
             if($sortByColumn == 'Code'){
